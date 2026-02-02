@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Editor Portfolio | Muhammad Muzammil</title>
+  <meta name="description" content="Professional video editor portfolio showcasing editing skills, thumbnails, graphic design, and a continuous learning mindset." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+    body { background: linear-gradient(135deg, #020617, #0f172a); color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { color: var(--muted); max-width: 700px; margin: auto; }
+
+    .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
+
+    section { margin-bottom: 80px; }
+    section h2 { font-size: 2rem; margin-bottom: 20px; border-left: 4px solid var(--accent); padding-left: 12px; }
+
+    .about p { color: var(--muted); line-height: 1.7; max-width: 800px; }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .skill-card {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .skill-card h3 { margin-bottom: 8px; }
+    .skill-card p { color: var(--muted); font-size: 0.95rem; }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .project-card {
+      background: var(--card);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover { transform: translateY(-6px); }
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: #020617;
+    }
+    .project-card .content { padding: 18px; }
+    .project-card h3 { margin-bottom: 8px; }
+    .project-card p { color: var(--muted); font-size: 0.9rem; }
+
+    .cta {
+      background: linear-gradient(135deg, #0284c7, #38bdf8);
+      color: #020617;
+      padding: 50px 20px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    .cta h2 { border: none; padding: 0; margin-bottom: 10px; }
+    .cta p { margin-bottom: 20px; }
+    .cta a {
+      display: inline-block;
+      background: #020617;
+      color: #fff;
+      padding: 14px 26px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Video Editor & Creative Designer</h1>
+    <p>
+        I am a passionate video editor and creative designer with skills in video editing, thumbnails, posters, and graphic design.
+        I am always in a continuous learning process, improving my skills and adapting to new styles, trends, and tools.
+        I can create designs and edits exactly as commanded, based on client requirements and project goals.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-card">
+          <h3>Video Editing</h3>
+          <p>Professional cuts, pacing, transitions, sound sync, and storytelling.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Learning & Adaptability</h3>
+          <p>Always learning new editing styles, trends, and techniques to meet any project demand.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Thumbnails</h3>
+          <p>High‑CTR YouTube thumbnails designed to grab attention.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Graphic Design</h3>
+          <p>Posters, social media designs, and branding visuals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Thumbnail Projects</h2>
+      <div class="projects">
+
+        <div class="project-card">
+          <img src="Yellow Modern Untold Mystery YouTube Thumbnail.png" alt="Business YouTube Thumbnail" />
+          <div class="content">
+            <h3>YouTube Thumbnail Design</h3>
+            <p>High-contrast, bold typography thumbnail designed to attract clicks.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="Yellow Modern Untold Mystery YouTube Thumbnail-1.png" alt="Business Growth Thumbnail" />
+          <div class="content">
+            <h3>YouTube Thumbnail Design</h3>
+            <p>Professional business-style thumbnail optimized for CTR.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Video Projects</h2>
+      <div class="projects">
+
+        <div class="project-card">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/v_CgkgyzA3c" title="Short Form Reel 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="content">
+            <h3>Short‑Form Reel Edit</h3>
+            <p>YouTube Shorts style vertical editing with fast cuts and engaging pacing.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/3t1_wAhRZY0" title="Short Form Reel 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="content">
+            <h3>Short‑Form Reel Edit</h3>
+            <p>Optimized short‑form content designed for retention and engagement.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Hire Me</h2>
+      <p>Looking for a reliable video editor? Let’s work together.</p>
+      <a href="mailto:muzammil13it@gmail.com">muzammil13it@gmail.com</a>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Muhammad Muzammil — Video Editor Portfolio
+  </footer>
+
+</body>
+</html>
