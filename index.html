@@ -547,4 +547,553 @@ header{
     </footer>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Muzammil | Portfolio</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    color:#fff;
+    line-height:1.7;
+}
+
+/* Navigation */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(15,23,42,0.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+nav h2{
+    color:#38bdf8;
+    font-size:1.5rem;
+}
+
+nav ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:15px;
+    background:linear-gradient(90deg,#38bdf8,#60a5fa,#a855f7);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+header p{
+    color:#cbd5e1;
+    font-size:1.3rem;
+    margin-bottom:25px;
+}
+
+header a{
+    text-decoration:none;
+    background:#38bdf8;
+    color:white;
+    padding:14px 28px;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+header a:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(56,189,248,.4);
+}
+
+/* Sections */
+
+section{
+    padding:90px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#38bdf8;
+    font-size:2.3rem;
+}
+
+/* About */
+
+#about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    color:#cbd5e1;
+    font-size:1.1rem;
+}
+
+/* Skills */
+
+#skills > div{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+#skills > div > div{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    transition:.4s;
+}
+
+#skills > div > div:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(56,189,248,.25);
+}
+
+#skills h3{
+    color:#38bdf8;
+}
+
+/* Learning */
+
+#learning ul{
+    max-width:700px;
+    margin:auto;
+}
+
+#learning li{
+    list-style:none;
+    margin:12px 0;
+    padding:18px;
+    border-radius:14px;
+    background:rgba(255,255,255,0.05);
+    border-left:4px solid #38bdf8;
+}
+
+/* Statistics */
+
+section:nth-of-type(4) div{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+section:nth-of-type(4) div div{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    transition:.4s;
+}
+
+section:nth-of-type(4) div div:hover{
+    transform:scale(1.05);
+}
+
+section:nth-of-type(4) h3{
+    color:#38bdf8;
+    font-size:2rem;
+}
+
+/* Featured Project */
+
+article{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,0.08);
+    transition:.4s;
+}
+
+article:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(56,189,248,.25);
+}
+
+article h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+article p{
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+article a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#38bdf8;
+    padding:10px 20px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+article a:hover{
+    background:#0ea5e9;
+}
+
+/* Projects */
+
+#projects{
+    display:block;
+}
+
+#projects article{
+    margin-bottom:25px;
+}
+
+/* Contact */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:15px 0;
+    font-size:1.1rem;
+}
+
+#contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
+}
+
+/* Animation */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+section,
+article,
+header{
+    animation:fadeUp .8s ease;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    header h1{
+        font-size:2.7rem;
+    }
+
+    header p{
+        font-size:1rem;
+    }
+
+    section{
+        padding:70px 6%;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>MM Portfolio</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Muhammad Muzammil</h1>
+
+        <p>
+            Python Developer • AI Enthusiast • Automation Learner
+        </p>
+
+        <a href="#about">Explore Portfolio</a>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am currently learning Python, Artificial Intelligence,
+            and Web Development. My goal is to build practical projects,
+            automate repetitive tasks using Python, and create modern
+            software solutions.
+        </p>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div>
+
+            <div>
+                <h3>Python</h3>
+            </div>
+
+            <div>
+                <h3>Python Automation</h3>
+            </div>
+
+            <div>
+                <h3>HTML</h3>
+            </div>
+
+            <div>
+                <h3>Artificial Intelligence</h3>
+            </div>
+
+            <div>
+                <h3>Web Development</h3>
+            </div>
+
+            <div>
+                <h3>Git & GitHub</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Learning -->
+    <section id="learning">
+
+        <h2>Currently Learning</h2>
+
+        <ul>
+            <li>Advanced Python Programming</li>
+            <li>Machine Learning Fundamentals</li>
+            <li>Artificial Intelligence Concepts</li>
+            <li>Web Development</li>
+            <li>Building Real-World Projects</li>
+            <li>Git & Version Control</li>
+        </ul>
+
+    </section>
+
+    <!-- Statistics -->
+    <section>
+
+        <h2>Statistics</h2>
+
+        <div>
+
+            <div>
+                <h3>1+</h3>
+                <p>Projects Completed</p>
+            </div>
+
+            <div>
+                <h3>6+</h3>
+                <p>Technologies Learned</p>
+            </div>
+
+            <div>
+                <h3>2026</h3>
+                <p>Learning Journey</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Featured Project -->
+    <section>
+
+        <h2>Featured Project</h2>
+
+        <article>
+
+            <h3>Python Calculator</h3>
+
+            <p>
+                My first Python project demonstrating
+                arithmetic operations, user input,
+                conditional statements, and functions.
+            </p>
+
+            <a href="https://github.com/muzammil13it-alt/python-calculator">
+                View Source Code
+            </a>
+
+        </article>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project-grid">
+
+        <article>
+
+            <h3>Python Calculator</h3>
+
+            <p>
+                A calculator built using Python that performs
+                addition, subtraction, multiplication,
+                and division.
+            </p>
+
+            <a href="https://github.com/muzammil13it-alt/python-calculator">
+                View Source Code
+            </a>
+
+        </article>
+
+        <article>
+
+            <h3>Web Scraper</h3>
+
+            <p>
+                Python application that extracts useful
+                information from websites for analysis.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+                Responsive personal portfolio showcasing
+                skills, projects, and learning progress.
+            </p>
+
+        </article>
+
+        <article>
+
+            <h3>File Automation Tool</h3>
+
+            <p>
+                Python script that automatically organizes
+                files into folders based on file type.
+            </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email: muzammil13it@gmail.com</p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/muzammil13it-alt">
+                github.com/muzammil13it-alt
+            </a>
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Muhammad Muzammil. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
 </html>
