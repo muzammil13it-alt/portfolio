@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Muzammil | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+/* Hero Section */
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.3rem;
+    color:#94a3b8;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#38bdf8;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    background:#0ea5e9;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:35px;
+    font-size:2.5rem;
+}
+
+.about{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    color:#cbd5e1;
+    font-size:1.1rem;
+}
+
+/* Skills */
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:15px 30px;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+}
+
+/* Projects */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card h3{
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+/* Learning Section */
+.learning-list{
+    max-width:700px;
+    margin:auto;
+}
+
+.learning-list li{
+    background:#1e293b;
+    margin:10px 0;
+    padding:15px;
+    border-radius:10px;
+    list-style:none;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:20px;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.5rem;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Muhammad Muzammil</h1>
+    <p>Python Developer • AI Enthusiast • Automation Learner</p>
+
+    <button class="btn"
+        onclick="document.getElementById('about').scrollIntoView();">
+        Explore Portfolio
+    </button>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="about">
+        <p>
+            I am currently learning Python, Artificial Intelligence,
+            and Web Development. My goal is to build practical projects,
+            automate repetitive tasks using Python, and create modern web
+            applications. I enjoy solving problems and continuously
+            improving my programming skills through real-world projects.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill">Python</div>
+        <div class="skill">Python Automation</div>
+        <div class="skill">HTML</div>
+        <div class="skill">Artificial Intelligence</div>
+        <div class="skill">Web Development</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<section>
+    <h2>Currently Learning</h2>
+
+    <ul class="learning-list">
+        <li>Advanced Python Programming</li>
+        <li>Web Development Fundamentals</li>
+        <li>HTML & Modern Website Structure</li>
+        <li>Artificial Intelligence Concepts</li>
+        <li>Machine Learning Basics</li>
+        <li>Building Real-World Projects</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+        <div class="project-card">
+            <h3>Python Calculator</h3>
+            <p>
+                A calculator application built using Python fundamentals
+                and problem-solving concepts.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>File Automation Tool</h3>
+            <p>
+                A Python script that automatically organizes files into
+                folders based on file types.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Web Scraper</h3>
+            <p>
+                Python-based scraper that extracts useful information
+                from websites for analysis.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+                A responsive personal portfolio showcasing skills,
+                projects, and learning progress.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+
+    <div class="contact">
+        <p>Email: your-email@example.com</p>
+        <p>GitHub: github.com/yourusername</p>
+        <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Muhammad Muzammil. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
